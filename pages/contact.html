@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bonsaic</title>
+    <meta name="author" content="Shaswat Nibha Maharjan">
+    <meta name="description" content="HTML Document">
+    <meta name="keywords" content="bonsai">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/script.js"></script>
+    <style>
+    .formcontainer{
+      width: 100%;
+      height: 100vh;
+      background:url(../images/bonsai3.jpg) no-repeat;
+      background-position-y: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .formcontainer form{
+      width: 90%;
+      max-width: 500px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 4px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+
+    .inputform{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      position: relative;
+    }
+
+    .inputform label{
+      flex-basis: 28%;
+    }
+    .inputform input, .input-group textarea{
+      flex-basis: 68%;
+      background: transparent;
+      border: 0;
+      outline: 0;
+      padding: 10px 0;
+      border-bottom: 1px solid #999;
+      color: #333;
+      font-size: 16px;
+    }
+
+    .formbtn{
+      background-color: #8CB59C;
+      border: none;
+      color: white;
+      padding: 12px 30px;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none;
+      display: block;
+      margin: 30px auto 10px;
+      font-size: 16px;
+    }
+
+    .formbtn:hover {
+      background-color: #415224;
+      color: white;
+    }
+    </style>
+  </head>
+    <!--navigation bar code starts-->
+    <nav>
+      <div class="navbar">
+          <div class="navLogo">
+            <a href ="../index.html"><img src="../images/bonsaic_logo_gray.png" width="150" alt=""></a>
+          </div>
+          
+          <table>
+            <td><a href="../index.html" class="navLinks">Home</a></td>
+            <td><a href="../pages/product.html" class="navLinks">Products</a></td>
+            <td><a href="../pages/blog.html" class="navLinks">Blog</a></td>
+            <td><a href="../pages/research.html" class="navLinks">Research</a></td>
+            <td><a href="../pages/aboutme.html" class="navLinks">About Me</a></td>
+          </table>
+          
+          <div class="topRight">
+            <button onclick="cart()" style="background-color: #8CB59C; border: none">
+              <a href="#">
+                <i class ="cart-icon">
+                  <img src="../images/cart.png" alt="Cart" style="width: 30px;">
+                </i>
+              </a>
+            </button>
+            <a href="#"><i class ="user-icon"><img src="../images/user.png" alt="User" style="width: 37px;"></i></a>
+          </div>
+      </div>
+    </nav>
+    <!--navigation bar code ends-->
+  <body>
+    <!-- division for whole form page -->
+    <div class = "formcontainer">
+          <form name="form" onsubmit="validateForm()">
+            <div class = "inputform">
+              <label for="name">First Name</label>
+              <input id="name" name="fname" type="text" >
+            </div>
+            <div class = "inputform">
+              <label for="name">Last Name</label>
+              <input id="name" name="lname" type="text" >
+            </div>
+            <div class = "inputform">
+              <label for="name">E-mail</label>
+              <input id="name" name="email" type="email" >
+            </div>
+            <div class = "inputform">
+              <label for="name">Phone No.</label>
+              <input id="name" name="number" type="number" >
+            </div>
+            <div class = "inputform">
+              <label for="name">Your Message</label>
+              <input id="name" name="message" type="message" >
+            </div>
+            <input class="formbtn" type="submit">
+          </form>
+    </div>
+    <!-- footer section starts -->
+    <footer class = "footer">
+      <div class="col1">
+        <img src = "../images/bonsaic_logo_white.png" style = "height: 50px;">
+        <br>
+        <p style="font-size: 16px; color:#999; padding:16px 0; line-height: 1.5;">
+          container of balance & harmony
+        </p>
+        <span class="copyright"> &copy; 2023 BONSAIC </span>
+      </div>
+
+      <div class="col2">
+        <h3>NEWSLETTER</h3>
+        <form class="news">
+          <input type = "email" placeholder="Your Email Address" required>
+          <br>
+          <button type = "submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="col3">
+        <a href = "contact.html" style="text-decoration: none; color:#D1EFEF"><h3>CONTACT US</h3></a>
+        <p>supporteam@bonsaic.com<br> Old Freak Street, Kathmandu, NP</p>
+        <br>
+        <div class = "social-media">
+          <h3>FOLLOW US</h3>
+          <i class ="facebook-icon"><img src="../images/facebook.png" alt="facebook" style="width: 40px;"></i></a>
+          <i class ="instagram-icon"><img src="../images/instagram.png" alt="instagram" style="width: 40px;"></i></a>
+          <i class ="twitter-icon"><img src="../images/twitter.png" alt="twitter" style="width: 40px;"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section ends -->
+  </body>
+</html>

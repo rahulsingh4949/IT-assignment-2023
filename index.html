@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bonsaic</title>
+    <meta name="author" content="Shaswat Nibha Maharjan">
+    <meta name="description" content="HTML Document">
+    <meta name="keywords" content="bonsai">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./javascript/script.js"></script>
+    <style>
+      .col-3{
+        box-shadow: 0 8px 24px rgba(0,0,0,.1);
+        border-radius: 8px;
+        border: 2px solid rgba(0,0,0,.1);
+        position: relative;
+        margin-top: 10px;  
+        margin-bottom: 10px;  
+        margin-left: 20px; 
+        margin-right: 20px; 
+        width: 380px;
+      }
+    </style>
+
+  </head>
+
+  <!-- navigation bar code starts -->
+    
+  <nav>
+
+    <div class="navbar">
+
+      <div class="navLogo">
+        <a href ="index.html"><img src="images/bonsaic_logo_gray.png" width="150" alt=""></a>
+      </div>
+      <!-- table tag for links in the navigation bar-->
+      <table>
+        <td><a href="index.html" class="navLinks">Home</a></td>
+        <td><a href="pages/product.html" class="navLinks">Products</a></td>
+        <td><a href="pages/blog.html" class="navLinks">Blog</a></td>
+        <td><a href="pages/research.html" class="navLinks">Research</a></td>
+        <td><a href="pages/aboutme.html" class="navLinks">About Me</a></td>
+      </table>
+      <!-- code for the two icons in the right side of the navigation bar-->
+      <div class="topRight">
+        <button onclick="cart()" style="background-color: #8CB59C; border: none">
+          <a href="#">
+            <i class ="cart-icon">
+              <img src="images/cart.png" alt="Cart" style="width: 30px;">
+            </i>
+          </a>
+        </button>
+        <a href="#"><i class ="user-icon"><img src="images/user.png" alt="User" style="width: 37px;"></i></a>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!--navigation bar code ends-->
+  
+  <!--home section starts-->
+
+  <body>
+    
+    <section class="home">
+      <!-- code for the big Bonsai text and the  -->
+      <div class="content" style="max-width: 800px; padding: 90px;">
+
+          <h3 style="font-size: 110px; color:#333;">Bonsai</h3>
+
+          <span style= "font-size: 32px; padding:16px 0; line-height: 1;">container of balance & harmony</span>
+
+          <p style="font-size: 24px; color:#999; padding:16px 0; line-height: 1.5;">
+           All about growing, trimming, sculpting and pruning your own beautiful bonsai tree.
+          </p>
+
+          <a href="pages/product.html" button class="btn-1">
+            Shop Now
+          </a>
+
+      </div>
+
+    </section>
+    <!--home section ends-->
+
+    <!-- icons section starts  -->
+    <section class="feat">
+        <!-- delivery icon box code -->
+        <div class="icons">
+            <img src="images/delivery.png" alt="Delivery Truck Image">
+            <div class="info">
+                <h3>No Delivery Charges</h3>
+                <span>Fast and Reliable</span>
+            </div>
+        </div>
+        <!-- gift icon box code -->
+        <div class="icons">
+            <img src="images/giftbox.png" alt="Gift Box Image">
+            <div class="info">
+                <h3>Offer & Gifts</h3>
+                <span>Gift your loved ones</span>
+            </div>
+        </div>
+        <!-- payment icon box code -->
+        <div class="icons">
+            <img src="images/securepayment.png" alt="Mobile Pay Image">
+            <div class="info">
+                <h3>Secure Payment</h3>
+                <span>Protected by e-sewa / Khalti</span>
+            </div>
+        </div>
+    
+    </section>
+    <!-- icons section ends -->
+
+    <!--Product Section Starts-->
+    <section class="products" id="products">
+      <!--Latest Product Heading-->
+      <h1 class="heading">Latest Products</h1>
+
+      <!--Container For 3 Product Starts-->
+      <div class="box-container">
+
+        <!--1st Product-->
+        <div class="col-3">
+          <div class="discounttext">
+            <span class="discount" style="  position: absolute; padding: 30px 30px; font-size: 32px; color: white;" >-20%</span>
+            <a href="pages/learnmore.html"><img src="./images/Buxus01-bonsai-3-boxwood.jpg" alt="Azalea Bonsai Tree"></a>
+          </div>
+          <h3>Boxwood</h3>
+          <p>Boxwood prefer shady areas, out of the hot afternoon sun.</p>
+          <div class="price">$27.99 <span style="text-decoration: line-through;"> $34.99</span></div>
+          <a href="pages/learnmore.html"><button class="button btn-1">Learn More</button></a>
+          <div class="description">
+            <span> BUXUS </span>
+            <span> Broadleaf </span>
+          </div>
+        </div>
+
+        <!--2nd Product-->
+        <div class="col-3">
+          <div class="discounttext">
+            <span class="discount" style="  position: absolute; padding: 30px 30px; font-size: 32px; color: white;" >-15%</span>
+            <a href="pages/learnmore.html"><img src="images/Azalea01-Satsuki-azalea.jpg" alt="Azalea Bonsai Tree"></a>
+        </div>
+          <h3>Azalea</h3>
+          <p>Azaleas prefer outdoor conditions in areas with semi-shade.</p>
+          <div class="price">$42.99 <span style="text-decoration: line-through;"> $49.99</span></div>
+          <a href="pages/learnmore.html"><button class="button btn-1">Learn More</button></a>
+          <div class="description">
+            <span> FICUS RETUSA OR GINSENG </span>
+            <span> Broadleaf </span>
+          </div>
+        </div>
+
+        <!--3rd Product-->
+        <div class="col-3">
+          <div class="discounttext">
+            <span class="discount" style="  position: absolute; padding: 30px 30px; font-size: 32px; color: white;" >-20%</span>
+            <a href="pages/learnmore.html"><img src="images/Cherry01-Sakura-Japan.jpg" alt="Azalea Bonsai Tree"></a>
+          </div>
+          <h3>Cherry</h3>
+          <p>Cherry prefer the cool temperatures of winter and the warmth of spring.</p>
+          <div class="price">$55.99 <span style="text-decoration: line-through;"> $69.99</span></div>
+          <a href="pages/learnmore.html"><button class="button btn-1">Learn More</button></a>
+          <div class="description">
+            <span> PRUNUS, SAKURA</span>
+            <span> Deciduous </span>
+          </div>
+        </div>
+      </div>
+      <!--Container For 3 Product Ends-->
+    </section>
+    <!--Product Section Starts Ends-->
+
+    <!-- navsection starts -->
+    <section class="navsection" style = "padding: 30px 100px;">
+      <div class="box-container">
+        <!-- descripton code of product page -->
+          <div class="box">
+            <div class="navsectionimg">
+              <img src = "images/navsectionimg1.png" width="300px">
+            </div>
+            <div class = "navsectioncontent" style="padding-left: 20px;">
+            <h3 style="font-size: 32px;">Products</h3>
+            <p align = "justify" style="color:#999; font-size: 20px;line-height: 1.5; padding-top: 20px;">Introducing our beautiful collection of bonsai trees, carefully hand-picked and nurtured by our experts. These miniature trees bring a touch of nature and serenity to any room or office. Each tree is unique and will make a great addition to your home or as a gift for a loved one. Shop now and elevate your space with our stunning bonsai collection.</p>
+            <a href="pages/product.html" button class="navsecbtn">Go to Product Page</a>
+            </div>
+          </div>
+        <!-- descripton code of blog page -->
+          <div class="box">
+            <div class="navsectionimg">
+              <img src = "images/navsectionimg2.png" width="300px">
+            </div>
+            <div class = "navsectioncontent" style="padding-left: 20px;">
+            <h3 style="font-size: 32px;">Blog</h3>
+            <p align = "justify" style="color:#999; font-size: 20px;line-height: 1.5; padding-top: 20px;">Welcome to our Bonsai blog, where we talk about the technology and Bonsai. Learn how technology has a both positive and negative impacts in our lives and in the bonsai world. Check back often for new posts and join the conversation with our community of bonsai lovers.</p>
+            <a href="pages/blog.html" button class="navsecbtn">Go to Blog Page</a>
+            </div>
+          </div>
+        <!-- descripton code of research page -->  
+          <div class="box">
+            <div class="navsectionimg">
+              <img src = "images/navsectionimg3.png" width="300px">
+            </div>
+            <div class = "navsectioncontent" style="padding-left: 20px;">
+            <h3 style="font-size: 32px;">Research</h3>
+            <p align = "justify" style="color:#999; font-size: 20px;line-height: 1.5; padding-top: 20px;">Explore our Research page and see the inspiration behind the design of our Bonsai website. We have compared our website with other popular websites to showcase the unique features that set us apart. Here you'll find an in-depth analysis of user interface, features, and overall design.</p>
+            <a href="pages/research.html" button class="navsecbtn">Go to Research Page</a>
+            </div>
+          </div>
+        <!-- descripton code of about me page -->
+          <div class="box">
+            <div class="navsectionimg">
+              <img src = "images/navsectionimg4.png" width="300px">
+            </div>
+            <div class = "navsectioncontent" style="padding-left: 20px;">
+            <h3 style="font-size: 32px;">About Me</h3>
+            <p align = "justify" style="color:#999; font-size: 20px;line-height: 1.5; padding-top: 20px;">Discover the team behind Bonsaic and learn more about our passion for bringing the beauty of bonsai to your home.</p>
+            <a href="pages/aboutme.html" button class="navsecbtn">Go to About Me Page</a>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- navsection ends-->
+
+    <!-- footer section starts -->
+    <footer class = "footer">
+      <!-- division class seperated for logo -->
+      <div class="col1">
+        <img src = "images/bonsaic_logo_white.png" style = "height: 50px;">
+        <br> 
+        <p style="font-size: 16px; color:#999; padding:16px 0; line-height: 1.5;">
+          container of balance & harmony
+        </p>
+        <span class="copyright"> &copy; 2023 BONSAIC </span>
+      </div>
+      <!-- newsletter code footer -->
+      <div class="col2">
+        <h3>NEWSLETTER</h3>
+        <form class="news">
+          <input type = "email" placeholder="Your Email Address" required>
+          <br>
+          <button type = "submit">Subscribe</button>
+        </form> 
+      </div>
+      <!-- contact us code for footer -->
+      <div class="col3">
+        <a href = "pages/contact.html" style="text-decoration: none; color:#D1EFEF"><h3>CONTACT US</h3></a>
+        <p>supporteam@bonsaic.com<br> Old Freak Street, Kathmandu, NP</p>
+        <br>
+        <div class = "social-media">
+          <h3>FOLLOW US</h3>
+          <i class ="facebook-icon"><img src="images/facebook.png" alt="facebook" style="width: 40px;"></i></a>
+          <i class ="instagram-icon"><img src="images/instagram.png" alt="instagram" style="width: 40px;"></i></a>
+          <i class ="twitter-icon"><img src="images/twitter.png" alt="twitter" style="width: 40px;"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section ends -->
+  </body>
+</html>

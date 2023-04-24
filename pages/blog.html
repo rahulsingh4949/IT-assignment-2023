@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bonsaic</title>
+      
+    <meta name="description" content="HTML Document">
+    <meta name="keywords" content="bonsai">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/script.js"></script>
+    <style>
+
+      .card{
+        align-items: center;
+      }
+
+      .text span{
+        color: #139266;
+      }
+
+      .text{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .text1img{
+        margin-top: 60px;
+        margin-right: 20px;
+      }
+
+      .text2 span{
+        color: #139266;
+      }
+
+      .text2{
+        padding-left: 20px;
+        padding-right: 20px
+      }
+
+      .text2img{
+        margin-top: 30px;
+        margin-left: 20px;
+      }
+
+    </style>
+  </head>
+    <!--navigation bar code starts-->
+    <nav>
+      <div class="navbar">
+          <div class="navLogo">
+            <a href ="../index.html"><img src="../images/bonsaic_logo_gray.png" width="150" alt=""></a>
+          </div>
+
+          <table>
+            <td><a href="../index.html" class="navLinks">Home</a></td>
+            <td><a href="../pages/product.html" class="navLinks">Products</a></td>
+            <td><a href="../pages/blog.html" class="navLinks">Blog</a></td>
+            <td><a href="../pages/research.html" class="navLinks">Research</a></td>
+            <td><a href="../pages/aboutme.html" class="navLinks">About Me</a></td>
+          </table>
+
+          <div class="topRight">
+            <button onclick="cart()" style="background-color: #8CB59C; border: none">
+              <a href="#">
+                <i class ="cart-icon">
+                  <img src="../images/cart.png" alt="Cart" style="width: 30px;">
+                </i>
+              </a>
+            </button>
+            <a href="#"><i class ="user-icon"><img src="../images/user.png" alt="User" style="width: 37px;"></i></a>
+          </div>
+      </div>
+    </nav>
+    <!--navigation bar code ends-->
+
+  <body> 
+
+    <div class="row" style ="padding: 10%">
+      <div class="blog-column">
+        <div class="card">
+          <!-- division for text and image -->
+          <div class="text-cont" style="display: flex;">
+            <!-- division for text editing -->
+            <div class="text">
+              <h2 style="color: #964B00; padding:20px;">What is <span>Technology</span>?</h2>
+              <p align = "justify">Technology has greatly influenced our daily routine and has changed the way we interact, work and communicate with others. One of the most notable advantages of technology is the convenience it provides in terms of access to information and connecting with people globally. Additionally, many tasks and procedures have become more streamlined and efficient thanks to technology, resulting in saved time and resources.</p>
+              <br>
+              <p align = "justify">Technology has greatly influenced our daily routine and has changed the way we interact, work and communicate with others. One of the most notable advantages of technology is the convenience it provides in terms of access to information and connecting with people globally. Additionally, many tasks and procedures have become more streamlined and efficient thanks to technology, resulting in saved time and resources.</p>
+              <br>
+              <p align = "justify">Despite its advantages, technology has also brought some negative aspects. One of the main issues is that technology has the potential to automate jobs, resulting in making certain skills unnecessary. Furthermore, there is a growing concern about the effect of technology on our mental and physical well-being as well as on the environment.</p>
+            </div>
+            <!-- division for changing image properties -->
+            <div class="text1img">
+              <img src="../images/blogimg.jpg" style="width:255px; border-radius: 20px;">
+            </div>
+          </div>
+
+          <!-- division for text and image -->
+          <div class="text-cont" style="display: flex;">
+            <!-- division for changing image properties -->
+            <div class="text2img">
+              <img src="../images/blogimg2.jpg" style="width:260px; border-radius: 20px;">
+            </div>
+            <!-- division for text editing -->
+            <div class = "text2">
+              <h2 style="	color: #964B00; padding:20px;">Impact of Technology while selling <span>Bonsai</span></h2>
+              <p align = "justify">Technology has a huge impact while selling bonsai plants. Online marketplaces and social media make it easier for Bonsai sellers to show their plants to a lot of people. The technology like smartphones and tablets allows sellers to take and upload pictures of their plants, making it easy for buyers to see and buy them online. This makes buying Bonsai plants more convenient and allows sellers to reach customers from all over the world. Additionally, technology helps make buying and selling Bonsai plants more simple for both buyers and sellers. Overall, technology has had a positive effect on selling Bonsai plants and will continue to change the way it's done in the future.
+              </p>
+              <br>
+              <p align = "justify">In conclusion, technology has greatly influenced our daily routine and has brought many advantages such as convenience in accessing information and connecting with people globally, and making tasks and procedures more streamlined and efficient, saving time and resources. However, it also has negative aspects such as the potential to automate jobs and impact our mental and physical well-being and the environment. Technology has had a significant impact on the way Bonsai plants are sold as well, making it more convenient and accessible for buyers and allowing sellers to reach a wider audience and streamline the buying and selling process.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section starts -->
+    <footer class = "footer">
+      <div class="col1">
+        <img src = "../images/bonsaic_logo_white.png" style = "height: 50px;">
+        <br>
+        <p style="font-size: 16px; color:#999; padding:16px 0; line-height: 1.5;">
+          container of balance & harmony
+        </p>
+        <span class="copyright"> &copy; 2023 BONSAIC </span>
+      </div>
+
+      <div class="col2">
+        <h3>NEWSLETTER</h3>
+        <form class="news">
+          <input type = "email" placeholder="Your Email Address" required>
+          <br>
+          <button type = "submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="col3">
+        <a href = "contact.html" style="text-decoration: none; color:#D1EFEF"><h3>CONTACT US</h3></a>
+        <p>supporteam@bonsaic.com<br> Old Freak Street, Kathmandu, NP</p>
+        <br>
+        <div class = "social-media">
+          <h3>FOLLOW US</h3>
+          <i class ="facebook-icon"><img src="../images/facebook.png" alt="facebook" style="width: 40px;"></i></a>
+          <i class ="instagram-icon"><img src="../images/instagram.png" alt="instagram" style="width: 40px;"></i></a>
+          <i class ="twitter-icon"><img src="../images/twitter.png" alt="twitter" style="width: 40px;"></i></a>
+        </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section ends -->
+  </body>
+</html>
